@@ -181,8 +181,11 @@ color: #000;
     text-align: center;
     background-color: #2F303A;
 
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
         url(../images/imagin.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 }
 
 .hero-button {
