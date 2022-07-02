@@ -151,6 +151,7 @@ color: #000;
 .contact-nav {
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 
 .contact-nav .contact-item + .contact-item {
@@ -174,6 +175,7 @@ color: #000;
     color: var(--accent-text-color);
 }
 
+
 /* hero */
 
 .hero {
@@ -182,10 +184,10 @@ color: #000;
     background-color: #2F303A;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-        url(../images/imagin.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+    url(../images/imagin.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-button {
@@ -227,6 +229,20 @@ justify-content: space-between;
 
 .benefits-item {
     width: 270px;
+}
+
+.benefits-icon {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--buttons-color);
+    margin-bottom: 30px;
+}
+
+.features-icon {
+    width: 70px;
+    height: 70px;
 }
 
 .title {
