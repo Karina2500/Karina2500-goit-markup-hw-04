@@ -160,7 +160,8 @@ color: #000;
 }
 
 .contact-nav a {
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     font-size: 14px;
@@ -199,6 +200,8 @@ color: #000;
 /* hero */
 
 .hero {
+    max-width: 1600px;
+    margin: 0 auto;
     padding: 200px 0;
     text-align: center;
     background-color: #2F303A;
@@ -448,9 +451,9 @@ justify-content: space-between;
 }
 
 .media-icon {
-    display: flex;
-    padding-left: 0;
-    margin: 0 auto;
+padding-left: 0;
+display: flex;
+margin-bottom: 0;
 } 
 
 .media-list {
@@ -557,12 +560,23 @@ justify-content: space-between;
     color: var(--primary-text-color);
     border-radius: 4px;
     border-color: transparent;
+    cursor: pointer;
 }
 
 
-.portfolio-buttons:hover {
+.portfolio-buttons:hover,
+.portfolio-buttons:focus {
     background-color: var(--accent-text-color);
     color: var(--background-color);
+}
+
+.item:hover,
+.item:focus {
+    box-shadow:
+    0px 1px 1px rgb(0 0 0 / 12%),
+    0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
+    cursor: pointer;
 }
 
 /* foto in portfolio */
@@ -590,7 +604,14 @@ justify-content: space-between;
     margin-right: 30px;
 }
 
-
+.photo-portfolio:hover,
+.photo-portfolio:focus {
+    box-shadow:
+    0px 1px 1px rgb(0 0 0 / 12%),
+    0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
+    cursor: pointer;
+}
 
 .portfolio-text {
     margin-bottom: 4px;
@@ -636,8 +657,11 @@ justify-content: space-between;
 }
 
 .social-team-link {
-    display: block;
-    padding: 12px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     border-radius: 50%;
     background-color: var(--background-color);
