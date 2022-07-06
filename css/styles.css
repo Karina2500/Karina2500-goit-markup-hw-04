@@ -145,8 +145,8 @@ color: #000;
     color: var(--accent-text-color);
 }
 
-.site-nav .link:hover,
-.site-nav.link:focus {
+.site-link:hover,
+.site-link:focus {
     color: var(--accent-text-color);
 }
 
@@ -181,6 +181,11 @@ color: #000;
 .header-link-item {
     display: flex;
     align-items: center;
+}
+
+.header-link-item:focus,
+.header-link-item:hover {
+    color: var(--accent-text-color);
 }
 
 .icon-mail {
@@ -528,7 +533,8 @@ margin-bottom: 0;
     color: rgba(255, 255, 255, 0.6);
 }
 
-.adress-link:hover {
+.adress-link:hover,
+.adress-link:focus {
     color: var(--accent-text-color);
 }
 
@@ -683,4 +689,18 @@ margin-bottom: 0;
 .social-team-link:focus {
     background-color: var(--accent-text-color);
     color: var(--background-color);
+}
+
+.project {
+    display: block;
+}
+
+.project:hover,
+.project:focus {
+    border-radius: 4px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    text-decoration-line: none;
 }
